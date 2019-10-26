@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <p>TODO LIST</p>
+        <div class="content">
+            <div class="searchForm">
+                <button class="btnasc">ASC</button>
+                <button class="btndesc">DESC</button>
+            </div>
+            <div>
+                <button class="show" onclick="showForm()">Show The Form</button>
+                <div class="adddata">
+                    <input type="text" name="" id="name" placeholder="Name..." />
+                    <input type="text" name="" class="sel" placeholder="Age..." />
+                    <button class="add">ADD</button>
+                    <button class="closes">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id="infoList"></tbody>
+        </table>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
